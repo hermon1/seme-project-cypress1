@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Old School Vinyl is a ecomerce site for anybody that is
+      looking for vintage vinyl. Nostalgia for your ears. Come and shop.."
+    />
+    <meta
+      name="keywords"
+      content="Old School Vinyl, vintage vinyl, retro music, second hand records"
+    />
+    <meta name="author" content="Hermon Tesfay" />
+    <title>Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/33f994c228.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/ .css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="image/logo.png" alt="Old School Vinyl Logo" class="logo"
+      /></a>
+
+      <nav>
+        <a href="index.html">Home <i class="fa-solid fa-house"></i></a>
+
+        <a href="shop.html">Shop <i class="fas fa-record-vinyl"></i></a>
+
+        <a href="cart.html">Cart <i class="fas fa-shopping-cart"></i></a>
+        <a href="login.html">Login <i class="fas fa-user-alt"></i></a>
+        <a href="admin.html" class="active"
+          >Admin <i class="fa-solid fa-user"></i
+        ></a>
+      </nav>
+      <div class="header_icons">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="menu-container"></div>
+
+        <h1 class="login-header">Add Product</h1>
+
+        <form>
+          <div class="message-container"></div>
+
+          <div>
+            <label for="title">Title</label>
+            <input id="title" />
+          </div>
+          <div>
+            <label for="price">Price</label>
+            <input id="price" />
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+          </div>
+
+          <input type="checkbox" id="checkbox" value="featured" />
+          <label for="featured">Check off if featured</label><br />
+
+          <label for="myfile">Select an image:</label>
+          <input type="file" id="myfile" /> <br /><br />
+
+          <button>Add</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footercontainer">
+        <div class="item one">
+          <div class="contact-container">
+            <form id="contactForm">
+              <div>
+                <label>
+                  Subscribe To Our Newsletter
+                  <input name="email" id="email"placeholder="example jens@gmail.com" />
+                </label>
+                <div class="form-error" id="emailError">
+                  Please enter a valid email address
+                </div>
+              </div>
+
+              <button id="button6">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="item two">
+          <h3>Useful Information</h3>
+          <h3>FAQ</h3>
+          <h3>Terms and Conditions</h3>
+        </div>
+
+        <div class="item three">
+          <h3>Follow Us On Social Media</h3>
+          <div class="social-bar">
+            <a href="" target="_blank" class="fa-brands fa-twitter"></a>
+            <a href="" target="_blank" class="fa-brands fa-facebook"></a>
+            <a href="" target="_blank" class="fa-brands fa-instagram"></a>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <div class="footer-copyright">
+        <p>
+          &copy; This is a semester project about
+          <a href="index.html" target="_blank" class="link">Old School Vinyl</a>
+          designed by Hermon Tesfay student at Noroff
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+
+    <script src="js/newsletter.js"></script>
+    <script src="js/admin.js" type="module"></script>
+    <script src="js/add.js" type="module"></script>
+  </body>
+</html>
